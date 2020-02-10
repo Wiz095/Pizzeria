@@ -1,0 +1,75 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-button fill="clear" color="secondary" (click)="goback()">
+      <ion-icon name="arrow-back" mode="ios">
+      </ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>
+      <h1>Pizza Delivery</h1>
+    </ion-list-header>
+
+    <!--names  -->
+    <ion-list>
+      <ion-item>
+        <h4>Name:
+          <h5 color="primary">{{Fname}} {{Lname}}</h5>
+        </h4>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-item>
+        <h4 color="primary">Pizza Ordering:
+          <h5 color="primary">{{Pizza}}</h5>
+        </h4>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-item>
+        <h4>Extra Toppings:
+          <h5 color="primary">{{veggies}}</h5>
+          <h5 color="primary">{{pepperoni}}</h5>
+          <h5 color="primary">{{mushrooms}}</h5>
+          <h5 color="primary">{{cheese}}</h5>
+          <h5>{{toppings}}</h5>
+        </h4>
+      </ion-item>
+    </ion-list>
+
+    <!-- Delivery Location -->
+    <ion-list>
+      <ion-item lines="none">
+        <h4> Phone Number:
+          <h5 color="primary">{{number}}</h5>
+        </h4>
+      </ion-item>
+      <ion-item lines="none">
+        <h4>Address:
+          <h5 color="primary">{{address}}</h5>
+        </h4>
+      </ion-item>
+      <ion-item>
+        <h4>Special Request:
+          <h5 color="primary">{{special}}</h5>
+        </h4>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item>
+        <h4>Payment Method:
+          <h5 color="primary">{{Payment}}</h5>
+        </h4>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,87 @@
+<ion-header mode="md">
+  <div slot="start" class="greeting">
+    <h1>What can we make<br> for you today {{Fname}}?</h1>
+    <h6>Freaky Fast, Freaky Good, Fast Delivery<br> On The Go</h6>
+  </div>
+</ion-header>
+
+
+<ion-content scroll-events="true" force-overscroll="false" (ionScroll)="handleScroll($event)">
+
+
+  <div class="topbar-container">
+    <div class="topbar">
+      <div class="topbar-chip" (click)="toggleAnimation()"></div>
+    </div>
+  </div>
+
+  <div class="title-container">
+    <div class="option-title">Let's Make Your Order</div>
+  </div>
+
+  <!-- Allow navigation to specific pages to make orders -->
+  
+
+
+  <div>
+  <ion-card (click)="goTopizza()">
+  <ion-item lines="none" mode="ios">
+      <ion-thumbnail slot="start">
+        <img src="../assets/icon/pizza.png">
+      </ion-thumbnail>
+      <ion-label>PIZZA </ion-label>
+      <ion-icon name="arrow-forward"></ion-icon>
+  </ion-item>
+  </ion-card>
+
+  <ion-card>
+  <ion-item lines="none" mode="ios">
+      <ion-thumbnail slot="start">
+        <img src="../assets/icon/bbq.png">
+      </ion-thumbnail>
+      <ion-label>BBQ </ion-label>
+      <ion-icon name="arrow-forward"></ion-icon>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item lines="none">
+      <ion-thumbnail slot="start">
+        <img src="../assets/icon/burger.png">
+      </ion-thumbnail>
+      <ion-label>BURGER </ion-label>
+      <ion-icon name="arrow-forward"></ion-icon>
+  </ion-item>
+</ion-card>
+
+<ion-card> 
+   <ion-item lines="none" mode="ios">
+  <ion-thumbnail slot="start">
+        <img src="../assets/icon/taco.png">
+      </ion-thumbnail>
+      <ion-label>TACOS </ion-label>
+      <ion-icon name="arrow-forward"></ion-icon>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item lines="none" mode="ios">
+      <ion-thumbnail slot="start">
+        <img src="../assets/icon/wings.png">
+      </ion-thumbnail>
+      <ion-label>WINGS </ion-label>
+      <ion-icon name="arrow-forward"></ion-icon>
+  </ion-item>
+</ion-card>
+
+<ion-card>
+  <ion-item lines="none" mode="ios">
+      <ion-thumbnail slot="start">
+        <img src="../assets/icon/subway.png">
+      </ion-thumbnail>
+      <ion-label>SUBWAY </ion-label>
+      <ion-icon name="arrow-forward"></ion-icon>
+  </ion-item>
+</ion-card>
+</div>
+</ion-content>
